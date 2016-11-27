@@ -10,7 +10,7 @@
   font-family: ProximaNovaL;
   src: url(../fonts/Proxima-Nova-Light.ttf); }
 
-.button, .block-content > ul a:hover, .block-content > ul .active a, .slider-text a, .categ-more {
+.button, .block-content > ul a:hover, .block-content > ul > .active > a, .slider-text a, .categ-more {
   height: 26px;
   background-color: #a29a75;
   color: #fffef7;
@@ -294,12 +294,13 @@ ul, li {
   .component .categ-header, .component .page-header, .item-title {
     margin: 0;
     color: white;
-    font-family: ProximaNovaL;
+    font-family: ProximaNova;
     font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 23px;
     background: url("../img/categ-head-bg.png") no-repeat 0 0;
-    padding: 0 10px; }
+    padding: 0 10px;
+    font-weight: 300; }
     .component .categ-header a, .component .page-header a, .item-title a, .page-header h2 {
       color: #FFF;
       text-decoration: none;
@@ -325,7 +326,7 @@ ul, li {
     margin-bottom: 6px;
     line-height: 1;
     margin-right: 3px; }
-  .component .categ-content, .items-leading > div {
+  .component .categ-content, .items-leading > div, .item-page {
     color: #333333;
     font-family: ProximaNovaL;
     font-size: 15px;
@@ -338,6 +339,11 @@ ul, li {
   .component .categ > ul > li {
     padding: 0;
     list-style: none; }
+
+.item-page p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 
 .component ul {
   margin-left: 22px; }
@@ -620,3 +626,7 @@ marquee {
   z-index: 1001;
   background-color: #000;
   opacity: 0.8; }
+
+.blog-featured .pull-left.item-image {
+  display: none;
+}
